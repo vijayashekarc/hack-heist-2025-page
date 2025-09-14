@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hack-heist-2025-page/static/css/main.178395ca.css",
-    "main.js": "/hack-heist-2025-page/static/js/main.8a05e27d.js",
+    "main.css": "/hack-heist-2025-page/static/css/main.99ccb62c.css",
+    "main.js": "/hack-heist-2025-page/static/js/main.1c158fbf.js",
     "static/js/453.5b920d27.chunk.js": "/hack-heist-2025-page/static/js/453.5b920d27.chunk.js",
-    "static/media/event1.png": "/hack-heist-2025-page/static/media/event1.edb5296f69f569430278.png",
-    "static/media/event2.png": "/hack-heist-2025-page/static/media/event2.edb5296f69f569430278.png",
+    "static/media/event1.png": "/hack-heist-2025-page/static/media/event1.c308be13c971d8804f6b.png",
     "static/media/event3.png": "/hack-heist-2025-page/static/media/event3.edb5296f69f569430278.png",
     "static/media/event4.png": "/hack-heist-2025-page/static/media/event4.edb5296f69f569430278.png",
     "static/media/hackheist.png": "/hack-heist-2025-page/static/media/hackheist.6b8123fbf6d7adb1838b.png",
-    "static/media/sponsor2.png": "/hack-heist-2025-page/static/media/sponsor2.6b8123fbf6d7adb1838b.png",
     "static/media/floater-icon.png": "/hack-heist-2025-page/static/media/floater-icon.a7604f6fca32a1a3233f.png",
     "static/media/logo.png": "/hack-heist-2025-page/static/media/logo.94a04a8bf122a8a15f34.png",
+    "static/media/sponsor1.png": "/hack-heist-2025-page/static/media/sponsor1.94a04a8bf122a8a15f34.png",
+    "static/media/event2.png": "/hack-heist-2025-page/static/media/event2.75e49560ab7b12067ff0.png",
     "index.html": "/hack-heist-2025-page/index.html",
-    "main.178395ca.css.map": "/hack-heist-2025-page/static/css/main.178395ca.css.map",
-    "main.8a05e27d.js.map": "/hack-heist-2025-page/static/js/main.8a05e27d.js.map",
+    "main.99ccb62c.css.map": "/hack-heist-2025-page/static/css/main.99ccb62c.css.map",
+    "main.1c158fbf.js.map": "/hack-heist-2025-page/static/js/main.1c158fbf.js.map",
     "453.5b920d27.chunk.js.map": "/hack-heist-2025-page/static/js/453.5b920d27.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.178395ca.css",
-    "static/js/main.8a05e27d.js"
+    "static/css/main.99ccb62c.css",
+    "static/js/main.1c158fbf.js"
   ]
 }
