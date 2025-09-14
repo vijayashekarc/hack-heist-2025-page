@@ -1,38 +1,46 @@
+/* src/App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--border-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: var(--primary-red);
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.section-content {
+  /* --- CHANGED --- */
+  font-size: 1.2rem; /* Increased from 1.1rem */
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .section-title {
+    font-size: 2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section-content {
+    font-size: 1.1rem; /* Increased from 1rem for better mobile readability */
   }
 }
