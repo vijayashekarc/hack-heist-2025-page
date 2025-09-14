@@ -4,7 +4,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 
-// --- NEW: Import the icons from the library ---
 import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 
 import sponsor1 from './assets/sponsor1.png';
@@ -18,9 +17,19 @@ import event4 from './assets/event4.png';
 function App() {
   return (
     <div className="App">
+      {/* --- NEW: Container for the background animation --- */}
+      <div className="background-animation">
+        <div className="light x1"></div>
+        <div className="light x2"></div>
+        <div className="light x3"></div>
+        <div className="light x4"></div>
+        <div className="light x5"></div>
+      </div>
+
       <Navbar />
       <Hero />
 
+      {/* ... rest of your sections ... */}
       <section id="about" className="section">
         <h2 className="section-title">About Hack Heist</h2>
         <p className="section-content">
@@ -54,7 +63,7 @@ function App() {
               <svg className="widget-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
-              <h3 className="widget-title">Team Size</h3>
+              <h3 className="widget-title">Team <br></br> Size</h3>
               <p className="widget-value">3-4</p>
               <span className="widget-subtitle">members</span>
             </div>
@@ -80,6 +89,11 @@ function App() {
             <span className="prize-emoji">🥉</span>
             <h3>3rd Place</h3>
             <p>₹1,500</p>
+          </div>
+          <div className="prize-card">
+            <span className="prize-emoji">📜</span>
+            <h3>Certificates</h3>
+            <p>For All</p>
           </div>
         </div>
       </section>
@@ -126,15 +140,24 @@ function App() {
 
       <section id="contact" className="section">
         <h2 className="section-title">Contact Us</h2>
+        
         <p className="section-content">
-          For any queries, please reach out to us at <a href="mailto:contact@gfgkare.com" style={{color: 'var(--primary-red)'}}>contact@gfgkare.com</a>.
+          For any queries, feel free to contact.
+        </p>
+        <p className="section-contect"> 
+          Navadeep Marella - 7075072880 
+          <br></br>
+          Anirudh Naginayani Cheruvu - 9966066070
+          <br></br>
+          M Rakshan Ananth - 9003513022
+          <br></br>
+          Vijayashekar - 9398802601
         </p>
       </section>
 
       <footer className="footer">
         <div className="footer-content">
           <h3>GFG - KARE</h3>
-          {/* --- EDITED: Replaced text links with icons --- */}
           <div className="social-links">
             <a href="https://www.linkedin.com/company/gfg-kare-student-chapter" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
@@ -150,17 +173,19 @@ function App() {
       </footer>
       
       <style jsx>{`
-        /* ... other styles remain the same ... */
+        /* ... all your other styles remain here ... */
         .prize-container {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
           gap: 20px;
           justify-items: center;
+          max-width: 500px;
+          margin: 0 auto;
         }
         .prize-card {
           background-color: var(--primary-red);
           border: 1px solid #a00a12;
-          padding: 20px;
+          padding: 15px;
           border-radius: 15px;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
           box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
@@ -168,8 +193,8 @@ function App() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 80%;
-          max-width: 200px;
+          width: 100%;
+          max-width: 180px;
           aspect-ratio: 1 / 1;
         }
         .prize-card:hover {
@@ -177,20 +202,20 @@ function App() {
           box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
         }
         .prize-emoji {
-          font-size: 3.5rem;
+          font-size: 3rem;
           line-height: 1;
         }
         .prize-card h3 {
           color: #fff;
           font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.5rem; 
+          font-size: 1.3rem;
           margin-top: 10px;
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           text-align: center;
         }
         .prize-card p {
           color: #fff;
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           font-weight: bold;
           margin: 0;
         }
@@ -214,8 +239,8 @@ function App() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 80%;
-          max-width: 220px;
+          width: 100%;
+          max-width: 200px;
           aspect-ratio: 1 / 1;
         }
         .registration-widget:hover {
@@ -224,38 +249,27 @@ function App() {
         }
         .widget-icon {
           stroke: #fff;
-          width: 40px;
-          height: 40px;
-          margin-bottom: 15px;
+          width: 35px;
+          height: 35px;
+          margin-bottom: 10px;
         }
         .widget-title {
           color: #f0f0f0;
-          font-size: 1rem;
-          margin: 0 0 10px 0;
+          font-size: 0.9rem;
+          margin: 0 0 8px 0;
         }
         .widget-value {
           color: #fff;
           font-family: 'Bebas Neue', sans-serif;
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin: 0;
           line-height: 1;
         }
         .widget-subtitle {
             color: #f0f0f0;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
-        @media (max-width: 768px) {
-            .prize-emoji { font-size: 2.5rem; }
-            .prize-card h3, .prize-card p { font-size: 1rem; }
-            .widget-value { font-size: 2rem; }
-            .widget-icon { width: 30px; height: 30px; }
-            .registration-widget, .prize-card { padding: 10px; }
-            .gallery-grid {
-                max-width: 70%;
-            }
-        }
-
         .gallery-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -301,10 +315,10 @@ function App() {
         }
         .sponsors-container img {
           max-height: 80px;
-          filter: grayscale(100%) contrast(1.2);
           transition: filter 0.3s ease;
         }
         .sponsors-container img:hover {
+        
           filter: none;
         }
         .footer {
@@ -317,16 +331,49 @@ function App() {
           color: var(--primary-red);
           margin: 0 0 10px 0;
         }
-        /* --- EDITED: Added font-size for icons --- */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
         .social-links a {
           color: var(--text-white);
-          margin: 0 15px;
+          margin: 0;
           text-decoration: none;
+          font-size: 2rem;
           transition: color 0.3s ease;
-          font-size: 2rem; /* Controls the size of the icons */
+          line-height: 1;
         }
         .social-links a:hover {
           color: var(--primary-red);
+        }
+        
+        @media (max-width: 768px) {
+            .prize-container,
+            .registration-widgets-container,
+            .gallery-grid {
+                width: 90%;
+                margin: 0 auto;
+            }
+            .prize-emoji { font-size: 2.5rem; }
+            .prize-card h3, .prize-card p { font-size: 1rem; }
+            .widget-value { font-size: 2rem; }
+            .widget-icon { width: 30px; height: 30px; }
+            .registration-widget, .prize-card { padding: 10px; }
+        }
+
+        @media (max-width: 480px) {
+            .prize-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .registration-widgets-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .prize-card, .registration-widget {
+                max-width: 120px;
+            }
         }
       `}</style>
     </div>

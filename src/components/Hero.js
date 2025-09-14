@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
+import '../App.css';
 import hackHeistTitle from '../assets/hackheist.png'; 
 
 const Timer = () => {
@@ -12,9 +13,9 @@ const Timer = () => {
         if (difference > 0) {
             timeLeft = {
                 days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
+                HR: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                min: Math.floor((difference / 1000 / 60) % 60),
+                sec: Math.floor((difference / 1000) % 60),
             };
         }
         return timeLeft;
@@ -52,7 +53,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero-container">
       <div className="hero-content">
-        <p className="presenter-text">GFG CAMPUS BODY KARE PRESENTS</p>
+        <p className="presenter-text">GFG CAMPUS BODY KARE <br></br>PRESENTS</p>
         <img src={hackHeistTitle} alt="Hack Heist Title" className="hackathon-title-image" />
         <Timer />
 
@@ -64,7 +65,7 @@ const Hero = () => {
             </svg>
             <div className="widget-text">
               <h4>Date & Time</h4>
-              <p>11 - 12<br></br> October</p>
+              <p>11 - 12<br></br> October <br></br>2025   </p>
             </div>
           </div>
           <div className="info-widget">
@@ -73,7 +74,7 @@ const Hero = () => {
             </svg>
             <div className="widget-text">
               <h4>Venue</h4>
-              <p>8th Block Seminar Hall</p>
+              <p>8th Block Seminar Hall KARE</p>
             </div>
           </div>
         </div>
