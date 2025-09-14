@@ -21,7 +21,9 @@
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
-
+.footer-text{
+  color :rgb(61, 177, 112)
+}
 .section-content {
   font-size: 1.2rem;
   line-height: 1.6;

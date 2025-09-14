@@ -56,8 +56,8 @@ function App() {
                 <path d="M2 9a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9z"></path><path d="M16 14h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M6 18.5V6"></path>
               </svg>
               <h3 className="widget-title">Registration Fee</h3>
-              <p className="widget-value">₹350</p>
-              <span className="widget-subtitle">per team</span>
+              <p className="widget-value">₹300</p>
+              <span className="widget-subtitle">per head</span>
             </div>
             <div className="registration-widget">
               <svg className="widget-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -104,7 +104,7 @@ function App() {
           <li>Team of 3 - 4 people.</li>
           <li>The projects should strictly align with any of the given themes.</li>
           <li>No plagiarism.</li>
-          <li>The registration fee of Rs. 350 (per team) should be paid to complete the registration. This fee covers the registration, mentorship, refreshments and the ticket for the offline presentation.</li>
+          <li>The registration fee of Rs. 300 (per head) should be paid to complete the registration. This fee covers the registration, mentorship, refreshments and the ticket for the offline presentation.</li>
         </ul>
       </section>
 
@@ -157,7 +157,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer-content">
-          <h3>GFG - KARE</h3>
+          <h3 className="footer-text">G F G - K A R E </h3>
           <div className="social-links">
             <a href="https://www.linkedin.com/company/gfg-kare-student-chapter" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
@@ -328,7 +328,6 @@ function App() {
         .footer-content h3 {
           font-family: 'Bebas Neue', sans-serif;
           font-size: 2rem;
-          color: var(--primary-red);
           margin: 0 0 10px 0;
         }
         .social-links {
