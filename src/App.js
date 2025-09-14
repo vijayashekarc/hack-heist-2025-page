@@ -14,6 +14,8 @@ import event2 from './assets/event2.png';
 import event3 from './assets/event3.png';
 import event4 from './assets/event4.png';
 
+import floaterIcon from './assets/floater-icon.png';
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,10 @@ function App() {
         <div className="light x3"></div>
         <div className="light x4"></div>
         <div className="light x5"></div>
+
+        <img src={floaterIcon} alt="" className="floater f1" />
+        <img src={floaterIcon} alt="" className="floater f2" />
+        <img src={floaterIcon} alt="" className="floater f3" />
       </div>
 
       <Navbar />
@@ -45,7 +51,7 @@ function App() {
           Join us in our journey to push the boundaries of what's possible in the world of technology. 
           Know more about our initiations at <a href="https://linktr.ee/gfg_kare" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-red)'}}>linktr.ee/gfg_kare</a>.
         </p>
-      </section>
+      </section>  
       
       <section id="register" className="section">
         <h2 className="section-title">Process of Registration</h2>

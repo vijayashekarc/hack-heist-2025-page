@@ -119,3 +119,41 @@
   75% { transform: translate(5vw, 10vh) scale(0.9); }
   100% { transform: translate(0, 0) scale(1); }
 }
+/* --- NEW: Add all of the following styles for the PNG floaters --- */
+
+.floater {
+  position: absolute;
+  display: block;
+  opacity: 0.15;
+  animation: floatImage 30s infinite linear;
+}
+
+.floater.f1 {
+  width: 60px;
+  left: 20%;
+  top: 25%;
+  animation-duration: 28s;
+  animation-delay: -2s;
+}
+
+.floater.f2 {
+  width: 40px;
+  left: 80%;
+  top: 10%;
+  animation-duration: 22s;
+  animation-delay: -10s;
+}
+
+.floater.f3 {
+  width: 80px;
+  left: 50%;
+  top: 70%;
+  animation-duration: 35s;
+  animation-delay: -20s;
+}
+
+@keyframes floatImage {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0.1; }
+  50% { transform: translate(-20vw, 25vh) rotate(180deg); opacity: 0.2; }
+  100% { transform: translate(0, 0) rotate(360deg); opacity: 0.1; }
+}
