@@ -30,6 +30,7 @@ function App() {
         <img src={floaterIcon} alt="" className="floater f1" />
         <img src={floaterIcon} alt="" className="floater f2" />
         <img src={floaterIcon} alt="" className="floater f3" />
+        <img src={floaterIcon} alt="" className="floater f4" />
       </div>
 
       <Navbar />
@@ -49,7 +50,6 @@ function App() {
           The GFG KARE Student Chapter, proudly affiliated with GeeksforGeeks, is a vibrant community of tech enthusiasts and future innovators at Kalasalingam Academy of Research and Education.
           We organize workshops, coding competitions, hackathons, and guest lectures.
           Join us in our journey to push the boundaries of what's possible in the world of technology. 
-          Know more about our initiations at <a href="https://linktr.ee/gfg_kare" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary-red)'}}>linktr.ee/gfg_kare</a>.
         </p>
       </section>  
       
@@ -74,7 +74,7 @@ function App() {
               <span className="widget-subtitle">members</span>
             </div>
           </div>
-          <a href="#" className="register-button" style={{marginTop: '40px', display: 'inline-block'}}>Register Your Team</a>
+          <a href="https://hack-heist-2025.vercel.app" className="register-button" style={{marginTop: '40px', display: 'inline-block'}}>Register Your Team</a>
         </div>
       </section>
       
@@ -118,12 +118,12 @@ function App() {
         <h2 className="section-title">OUR PAST EVENTS</h2>
         <div className="gallery-grid">
           <div className="gallery-item">
-            <img src={event1} alt="Past Event 1" className="gallery-image" />
-            <h4 className="gallery-label">Event 1</h4>
+            <img src={event2} alt="Past Event 1" className="gallery-image" />
+            <h4 className="gallery-label">Algorithmist25</h4>
           </div>
           <div className="gallery-item">
-            <img src={event2} alt="Past Event 2" className="gallery-image" />
-            <h4 className="gallery-label">Event 2</h4>
+            <img src={event1} alt="Past Event 2" className="gallery-image" />
+            <h4 className="gallery-label">Algorithmist24</h4>
           </div>
           <div className="gallery-item">
             <img src={event3} alt="Past Event 3" className="gallery-image" />
@@ -151,8 +151,6 @@ function App() {
           For any queries, feel free to contact.
         </p>
         <p className="section-contect"> 
-          Navadeep Marella - 7075072880 
-          <br></br>
           Anirudh Naginayani Cheruvu - 9966066070
           <br></br>
           M Rakshan Ananth - 9003513022
@@ -304,12 +302,12 @@ function App() {
             left: 0;
             width: 100%;
             margin: 0;
-            padding: 25px 15px 15px;
+            padding-bottom : 10px;
             text-align: center;
             color: #fff;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: bold;
-            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+            background: linear-gradient(to top, rgba(192, 161, 161, 0.85), transparent);
         }
         
         .sponsors-container {
@@ -367,6 +365,7 @@ function App() {
             .widget-value { font-size: 2rem; }
             .widget-icon { width: 30px; height: 30px; }
             .registration-widget, .prize-card { padding: 10px; }
+            .gallery-label {font-size: 0.8rem;}
         }
 
         @media (max-width: 480px) {
@@ -379,6 +378,7 @@ function App() {
             .prize-card, .registration-widget {
                 max-width: 120px;
             }
+            .gallery-label {font-size: 0.8rem;}
         }
       `}</style>
     </div>
