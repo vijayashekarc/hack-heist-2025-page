@@ -127,7 +127,7 @@ function App() {
           </div>
           <div className="gallery-item">
             <img src={event3} alt="Past Event 3" className="gallery-image" />
-            <h4 className="gallery-label">Event 3</h4>
+            <h4 className="gallery-label">National Skillup</h4>
           </div>
           <div className="gallery-item">
             <img src={event4} alt="Past Event 4" className="gallery-image" />
